@@ -1,0 +1,28 @@
+.navbar-wbgifu {
+  background-color: #045b7f !important; }
+
+.first-slide {
+  max-width: 100%; }
+
+.carousel-caption {
+  background: rgba(4, 91, 127, 0.8);
+  padding: 30px;
+  border-radius: 10px; }
+  .carousel-caption h1 {
+    margin-bottom: 30px; }
+  .carousel-caption p {
+    margin-bottom: .5em; }
+    .carousel-caption p a.btn {
+      margin-top: 30px; }
+
+.container__pr {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.pr-thumbnail {
+  margin-bottom: 30px;
+  border: 2px solid #ccc; }
+
+.pr-title {
+  margin-bottom: 15px;
+  font-size: 22px; }

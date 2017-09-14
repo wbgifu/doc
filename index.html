@@ -6,76 +6,99 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>WordBench岐阜</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-	<a class="navbar-brand" href="#">Carousel</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarCollapse">
-	  <ul class="navbar-nav mr-auto">
-	    <li class="nav-item active">
-	      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Link</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link disabled" href="#">Disabled</a>
-	    </li>
-	  </ul>
-	</div>
+	<nav class="navbar navbar-wbgifu navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">WordBench岐阜</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+		  <ul class="navbar-nav mr-auto">
+		    <li class="nav-item">
+		      <a class="nav-link" href="/">WordBench岐阜とは</a>
+		    </li>
+				<li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          過去の開催履歴
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="#">第0回 (2016/08/20)</a>
+	          <a class="dropdown-item" href="#">第1回 (2016/09/24)</a>
+	          <a class="dropdown-item" href="#">第2回 (2017/08/12)</a>
+						<a class="dropdown-item" href="#">第3回 (2017/09/09)</a>
+	        </div>
+	      </li>
+		  </ul>
+			<div class="dropdown show">
+				<a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					定例WordPress講座とは？
+				</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="#">導入編</a>
+					<a class="dropdown-item" href="#">設定編</a>
+					<a class="dropdown-item" href="#">コンテンツ制作編</a>
+					<a class="dropdown-item" href="#">HTML&CSS編</a>
+					<a class="dropdown-item" href="#">カスタマイズ編</a>
+					<a class="dropdown-item" href="#">運用編</a>
+				</div>
+			</div>
+		</div>
 	</nav>
-
+	<!-- carousel -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption d-none d-md-block text-left">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption d-none d-md-block text-right">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide" src="images/carousel-image-01.jpg">
+        <div class="container">
+          <div class="carousel-caption d-none d-md-block text-center">
+            <h1>「初心者に優しいWordPressコミュニティ」</h1>
+            <p>「WordPressを触ってみたけど難しかった…」「本の通りにやってみたけどできなくて挫折した…」</p>
+						<p>「勤務先でホームページ作ってと言われたけど、どうしたらいいのか…」</p>
+						<p>そんな「初心者」の方にも参加しやすい内容と環境を用意しています。</p>
+            <p><a class="btn btn-lg btn-danger" href="https://wbgifu.connpass.com/" role="button" target="_blank">次の開催日程を確認する</a></p>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-
+  </div>
+	<!-- PR container -->
+	<div class="container container__pr">
+		<div class="row">
+			<div class="col-lg-4 pr-body text-center">
+				<img src="images/friends.jpg" alt="" class="rounded-circle pr-thumbnail">
+				<h2 class="pr-title">仲間をつくろう！</h2>
+				<p class="pr-text">超初心者から上級者まで参加者レベルは様々です。そんな環境でも「初心者に優しく」というルールのもと、一緒に学んでいます。</p>
+				<p>
+					<a href="#" class="btn btn-info">WordBench岐阜とは</a>
+				</p>
+			</div>
+			<div class="col-lg-4 pr-body text-center">
+				<img src="images/beginner.jpg" alt="" class="rounded-circle pr-thumbnail">
+				<h2 class="pr-title">初心者向け講座</h2>
+				<p class="pr-text">WordBench岐阜では「初心者向け講座」を定期的に開催しています。</p>
+				<p>
+					<a href="#" class="btn btn-info">「定例WordPress講座」とは</a>
+				</p>
+			</div>
+			<div class="col-lg-4 pr-body text-center">
+				<img src="images/webtan.jpg" alt="" class="rounded-circle pr-thumbnail">
+				<h2 class="pr-title">社内Web担当者も多く参加</h2>
+				<p class="pr-text">「勤務先でWeb担当を任されたけどまったく知識がなくて…」という方もどんどん参加して仲間を作って楽しんでいます。</p>
+				<p>
+					<a href="#" class="btn btn-info">WordBench岐阜とは</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<hr>
+	<footer class="site-footer">
+		<div class="container">
+			<p class="text-center"><a href="http://wordbench.org/" target="_blank">WordBench.org</a>で日本各地のWordBench情報を得ることができます。</p>
+		</div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
