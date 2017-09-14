@@ -4,10 +4,21 @@
 $brand-primary: #045b7f;
 
 //======================================================================
+// commons
+//======================================================================
+body {
+	font-family: "Mplus 1p";
+	color: #555555;
+	letter-spacing: .025em;
+}
+//======================================================================
 // navbar
 //======================================================================
 .navbar-wbgifu {
 	background-color: $brand-primary!important;
+}
+.navbar-logo {
+	margin-right: 5px;
 }
 
 //======================================================================
@@ -48,4 +59,48 @@ $brand-primary: #045b7f;
 .pr-title {
 	margin-bottom: 15px;
 	font-size: 22px;
+}
+
+//======================================================================
+// page content
+//======================================================================
+.page-content-wrap {
+	margin-top: 56px;
+}
+.page-header {
+	text-align: center;
+	h1 {
+		margin-bottom: 15px;
+	}
+	h1,
+	p.lead {
+		color: $brand-primary;
+	}
+	p.lead {
+		font-size: 14px;
+		opacity: .5;
+	}
+}
+
+.page-content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	h2 {
+		margin-top: 2em;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 10px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	h3,
+	h4,
+	h5 {
+		margin-top: 2em;
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-left: 3px solid $brand-primary;
+		margin-bottom: 10px;
+	}
 }

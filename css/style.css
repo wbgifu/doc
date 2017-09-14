@@ -1,5 +1,13 @@
+body {
+  font-family: "Mplus 1p";
+  color: #555555;
+  letter-spacing: .025em; }
+
 .navbar-wbgifu {
   background-color: #045b7f !important; }
+
+.navbar-logo {
+  margin-right: 5px; }
 
 .first-slide {
   max-width: 100%; }
@@ -26,3 +34,36 @@
 .pr-title {
   margin-bottom: 15px;
   font-size: 22px; }
+
+.page-content-wrap {
+  margin-top: 56px; }
+
+.page-header {
+  text-align: center; }
+  .page-header h1 {
+    margin-bottom: 15px; }
+  .page-header h1,
+  .page-header p.lead {
+    color: #045b7f; }
+  .page-header p.lead {
+    font-size: 14px;
+    opacity: .5; }
+
+.page-content {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .page-content h2 {
+    margin-top: 2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; }
+    .page-content h2:first-child {
+      margin-top: 0; }
+  .page-content h3,
+  .page-content h4,
+  .page-content h5 {
+    margin-top: 2em;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 3px solid #045b7f;
+    margin-bottom: 10px; }
