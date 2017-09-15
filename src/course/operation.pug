@@ -1,4 +1,4 @@
-include ../_header.pug
+include ../_include/_header.pug
 .page-content-wrap
 	// start page content
 	.jumbotron.jumbotron-fluid.page-header
@@ -8,6 +8,9 @@ include ../_header.pug
 	// end page header
 	// start page content
 	.container.page-content
+		.row
+			.col-md-8
+			include ../_include/_sidebar.pug
 
 	// end page content
-include ../_footer.pug
+include ../_include/_footer.pug

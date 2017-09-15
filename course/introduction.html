@@ -7,20 +7,20 @@
     <title>WordBench岐阜</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet">
-    <link rel="stylesheet" href="/doc/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-wbgifu navbar-expand-md navbar-dark fixed-top bg-dark"><a class="navbar-brand" href="/doc/"><img class="navbar-logo" src="/doc/images/wapuu.png" width="30" height="30">WordBench岐阜</a>
+    <nav class="navbar navbar-wbgifu navbar-expand-md navbar-dark fixed-top bg-dark"><a class="navbar-brand" href="/"><img class="navbar-logo" src="/images/wapuu.png" width="30" height="30">WordBench岐阜</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="/doc/about.html">WordBench岐阜とは</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">WordBench岐阜とは</a></li>
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">過去の開催履歴</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">第0回 (2016/08/20)</a><a class="dropdown-item" href="#">第1回 (2016/09/24)</a><a class="dropdown-item" href="#">第2回 (2017/08/12)</a><a class="dropdown-item" href="#">第3回 (2017/09/09)</a></div>
           </li>
         </ul>
         <div class="dropdown show"><a class="btn btn-info dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">定例WordPress講座について</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="/doc/course/index.html">定例WordPress講座とは？</a><a class="dropdown-item" href="/doc/course/introduction.html">導入編</a><a class="dropdown-item" href="/doc/course/setting.html">設定編</a><a class="dropdown-item" href="/doc/course/content.html">コンテンツ制作編</a><a class="dropdown-item" href="/doc/course/html-css.html">HTML&CSS編</a><a class="dropdown-item" href="/doc/course/customize.html">カスタマイズ編</a><a class="dropdown-item" href="/doc/course/operation.html">運用編</a></div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="/course/index.html">定例WordPress講座とは？</a><a class="dropdown-item" href="/course/introduction.html">導入編</a><a class="dropdown-item" href="/course/setting.html">設定編</a><a class="dropdown-item" href="/course/content.html">コンテンツ制作編</a><a class="dropdown-item" href="/course/html-css.html">HTML&CSS編</a><a class="dropdown-item" href="/course/customize.html">カスタマイズ編</a><a class="dropdown-item" href="/course/operation.html">運用編</a></div>
         </div>
       </div>
     </nav>
@@ -36,7 +36,46 @@
   </div>
   <!-- end page header-->
   <!-- start page content-->
-  <div class="container page-content"></div>
+  <div class="container page-content">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>WordPressとは</h2>
+        <p>絶賛執筆中です</p>
+        <h2>ローカル開発環境を作ってWordPressを動かしてみる</h2>
+        <div class="alert alert-danger">
+          <p>ローカル開発環境を動かして実演しながら講座を進めます。講座に沿って同じように自身の手元で試してみたい場合にはPCを持参ください。</p>
+          <p>また、ローカル開発環境で使うアプリについては事前にダウンロード＆インストールをお願いします。（下記参照）</p>
+        </div>
+        <h3>ローカル開発環境とは</h3>
+        <p>ローカル開発環境とは、自身のPC内にもう一つ別のPCを作り、その中に作業環境を構築するというようなイメージで解釈してもらっていいかと思います。</p>
+        <p>実際には、インターネットを経由してコントロールができるサーバーを利用して実験を行うことも可能です。</p>
+        <p>しかし、実際にはすでに運用を開始しているサーバーであったりすると、何かトラブルが起きた際に他のディレクトリを含むサーバー全体に悪影響を及ぼす可能性が考えられます。</p>
+        <p>ですので、実験やテストを気兼ねなく行うためにも、実際の運用サーバーとは切り離したローカル環境（自身のPC内）に環境を作ることが勧められています。</p>
+        <p>ローカル開発環境を整える方法はたくさんあります。例えばこんなものがあります。</p>
+        <ul>
+          <li><a href="http://vccw.cc/" target="_blank">vccw (http://vccw.cc/)</a></li>
+          <li><a href="https://www.mamp.info/en/" target="_blank">MAMP (https://www.mamp.info/en/)</a></li>
+          <li><a href="https://local.getflywheel.com/" target="_blank">Local by Flywheel (https://local.getflywheel.com/)</a></li>
+        </ul>
+        <p>今回、こちらでは一番シンプルにWordPressを自身のパソコン内で立ち上げられる<strong>Local by Flywheel（以下、Flywheel）</strong>を利用してみることにします。</p>
+        <p>では、実際にWordPressを動かせるローカル開発環境を用意してみましょう。</p>
+        <h3>Local by Flywheel をダウンロードする</h3>
+        <p>まずは下のURLからアクセスして、Local by Flywheel という無料アプリケーションをダウンロードします。</p>
+        <div class="alert alert-secondary"><a href="https://local.getflywheel.com/" target="_blank">https://local.getflywheel.com/</a></div>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="/course/index.html">定例WordPress講座とは？</a></li>
+          <li class="list-group-item"><a href="/course/introduction.html">導入編</a></li>
+          <li class="list-group-item"><a href="/course/setting.html">設定編</a></li>
+          <li class="list-group-item"><a href="/course/content.html">コンテンツ制作編</a></li>
+          <li class="list-group-item"><a href="/course/html-css.html">HTML&CSS編</a></li>
+          <li class="list-group-item"><a href="/course/customize.html">カスタマイズ編</a></li>
+          <li class="list-group-item"><a href="/course/operation.html">運用編</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <!-- end page content-->
 </div>
 <!-- footer-->

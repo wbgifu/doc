@@ -1,0 +1,41 @@
+include ../_include/_header.pug
+.page-content-wrap
+	// start page content
+	.jumbotron.jumbotron-fluid.page-header
+		.container
+			h1.display-4 導入編
+			p.lead 「WordPressとは」「ローカル開発環境を作ってWordPressを動かしてみる」
+	// end page header
+	// start page content
+	.container.page-content
+		.row
+			.col-md-8
+				h2 WordPressとは
+				p 絶賛執筆中です
+				h2 ローカル開発環境を作ってWordPressを動かしてみる
+
+				.alert.alert-danger
+					p ローカル開発環境を動かして実演しながら講座を進めます。講座に沿って同じように自身の手元で試してみたい場合にはPCを持参ください。
+					p また、ローカル開発環境で使うアプリについては事前にダウンロード＆インストールをお願いします。（下記参照）
+
+				h3 ローカル開発環境とは
+				p ローカル開発環境とは、自身のPC内にもう一つ別のPCを作り、その中に作業環境を構築するというようなイメージで解釈してもらっていいかと思います。
+				p 実際には、インターネットを経由してコントロールができるサーバーを利用して実験を行うことも可能です。
+				p しかし、実際にはすでに運用を開始しているサーバーであったりすると、何かトラブルが起きた際に他のディレクトリを含むサーバー全体に悪影響を及ぼす可能性が考えられます。
+				p ですので、実験やテストを気兼ねなく行うためにも、実際の運用サーバーとは切り離したローカル環境（自身のPC内）に環境を作ることが勧められています。
+				p ローカル開発環境を整える方法はたくさんあります。例えばこんなものがあります。
+				ul
+					li: a(href="http://vccw.cc/", target="_blank") vccw (http://vccw.cc/)
+					li: a(href="https://www.mamp.info/en/", target="_blank") MAMP (https://www.mamp.info/en/)
+					li: a(href="https://local.getflywheel.com/", target="_blank") Local by Flywheel (https://local.getflywheel.com/)
+				p 今回、こちらでは一番シンプルにWordPressを自身のパソコン内で立ち上げられる<strong>Local by Flywheel（以下、Flywheel）</strong>を利用してみることにします。
+				p では、実際にWordPressを動かせるローカル開発環境を用意してみましょう。
+
+				h3 Local by Flywheel をダウンロードする
+				p まずは下のURLからアクセスして、Local by Flywheel という無料アプリケーションをダウンロードします。
+				.alert.alert-secondary:  a(href="https://local.getflywheel.com/", target="_blank") https://local.getflywheel.com/
+
+			include ../_include/_sidebar.pug
+
+	// end page content
+include ../_include/_footer.pug

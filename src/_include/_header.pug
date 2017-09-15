@@ -1,3 +1,4 @@
+- var path = ''
 doctype html
 html(lang='ja')
 	head
@@ -7,18 +8,18 @@ html(lang='ja')
 		title WordBench岐阜
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M', crossorigin='anonymous')
 		link(href='https://fonts.googleapis.com/earlyaccess/mplus1p.css', rel='stylesheet')
-		link(rel='stylesheet', href='/doc/css/style.css')
+		link(rel='stylesheet', href=path+'/css/style.css')
 	body
 		nav.navbar.navbar-wbgifu.navbar-expand-md.navbar-dark.fixed-top.bg-dark
-			a.navbar-brand(href='/doc/')
-				img.navbar-logo(src="/doc/images/wapuu.png", width="30", height="30")
+			a.navbar-brand(href=path+'/')
+				img.navbar-logo(src=path+"/images/wapuu.png", width="30", height="30")
 				|WordBench岐阜
 			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
 				span.navbar-toggler-icon
 			#navbarCollapse.collapse.navbar-collapse
 				ul.navbar-nav.mr-auto
 					li.nav-item
-						a.nav-link(href='/doc/about.html') WordBench岐阜とは
+						a.nav-link(href=path+'/about.html') WordBench岐阜とは
 					li.nav-item.dropdown
 						a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 							| 過去の開催履歴
@@ -31,10 +32,10 @@ html(lang='ja')
 					a#dropdownMenuLink.btn.btn-info.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 						| 定例WordPress講座について
 					.dropdown-menu(aria-labelledby='dropdownMenuLink')
-						a.dropdown-item(href='/doc/course/index.html') 定例WordPress講座とは？
-						a.dropdown-item(href='/doc/course/introduction.html') 導入編
-						a.dropdown-item(href='/doc/course/setting.html') 設定編
-						a.dropdown-item(href='/doc/course/content.html') コンテンツ制作編
-						a.dropdown-item(href='/doc/course/html-css.html') HTML&CSS編
-						a.dropdown-item(href='/doc/course/customize.html') カスタマイズ編
-						a.dropdown-item(href='/doc/course/operation.html') 運用編
+						a.dropdown-item(href=path+'/course/index.html') 定例WordPress講座とは？
+						a.dropdown-item(href=path+'/course/introduction.html') 導入編
+						a.dropdown-item(href=path+'/course/setting.html') 設定編
+						a.dropdown-item(href=path+'/course/content.html') コンテンツ制作編
+						a.dropdown-item(href=path+'/course/html-css.html') HTML&CSS編
+						a.dropdown-item(href=path+'/course/customize.html') カスタマイズ編
+						a.dropdown-item(href=path+'/course/operation.html') 運用編
