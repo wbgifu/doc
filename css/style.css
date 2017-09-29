@@ -35,6 +35,12 @@ body {
   margin-bottom: 15px;
   font-size: 22px; }
 
+.container__schedule {
+  margin-top: 50px; }
+  .container__schedule h2 {
+    margin-bottom: 15px;
+    font-size: 26px; }
+
 .page-content-wrap {
   margin-top: 56px; }
 

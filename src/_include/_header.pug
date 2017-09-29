@@ -1,5 +1,5 @@
 - var path = '/doc'
-//- var path = ''
+// - var path = ''
 doctype html
 html(lang='ja')
 	head
@@ -22,13 +22,7 @@ html(lang='ja')
 					li.nav-item
 						a.nav-link(href=path+'/about.html') WordBench岐阜とは
 					li.nav-item.dropdown
-						a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-							| 過去の開催履歴
-						.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-							a.dropdown-item(href='#') 第0回 (2016/08/20)
-							a.dropdown-item(href='#') 第1回 (2016/09/24)
-							a.dropdown-item(href='#') 第2回 (2017/08/12)
-							a.dropdown-item(href='#') 第3回 (2017/09/09)
+						a.nav-link(href=path+'/index.html#schedule') 過去と今後の開催情報
 				.dropdown.show
 					a#dropdownMenuLink.btn.btn-info.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 						| 定例WordPress講座について
