@@ -1,0 +1,207 @@
+include ../_include/_header.pug
+.page-content-wrap
+	// start page content
+	.jumbotron.jumbotron-fluid.page-header
+		.container
+			h1.display-4 第4回WordBench岐阜 アンケート結果
+			p.lead 回答数12名
+	// end page header
+	// start page content
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js')
+	.container.page-content
+		.row
+			.col-md-8
+				h2 Q1.WordBench岐阜に参加するのは何回目ですか？
+				canvas#q1(width='400', height='200').chart-body
+				script.
+					var ctx = document.getElementById("q1").getContext('2d');
+					var q1 = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["はじめて", "2回目", "3回目", "それ以上"],
+							datasets: [{
+								label: '票数',
+								data: [2, 6, 4, 0],
+							}]
+						},
+					});
+				
+				h2 Q2.あなたの職種は？
+				canvas#q2(width='400', height='200').chart-body
+				script.
+					var ctx = document.getElementById("q2").getContext('2d');
+					var q2 = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["デザイナー", "フロントエンドエンジニア", "プログラマー", "ディレクター", "ブロガー", "学生", "勤務先Web担当者", "その他"],
+							datasets: [{
+								label: '票数',
+								data: [4, 0, 1, 2, 0, 0, 3, 2],
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										userCallback: function(label, index, labels) {
+											if (Math.floor(label) === label) {
+												return label;
+											}
+										}
+									}
+								}]
+							}
+						}
+					});
+				
+				h2 Q3.勤務形態は？
+				canvas#q3(width='400', height='200').chart-body
+				script.
+					var ctx = document.getElementById("q3").getContext('2d');
+					var q3 = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["自営業・フリーランス", "会社勤め", "リモートワーク"],
+							datasets: [{
+								label: '票数',
+								data: [4, 8, 0],
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										userCallback: function(label, index, labels) {
+											if (Math.floor(label) === label) {
+												return label;
+											}
+										}
+									}
+								}]
+							}
+						}
+					});
+				
+				h2 Q4.今回のWordBench岐阜を何で知りましたか？一番影響力の強かったものを１つ選んでください。
+				canvas#q4(width='400', height='200').chart-body
+				script.
+					var ctx = document.getElementById("q4").getContext('2d');
+					var q4 = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["前回のWordBench岐阜で知った", "Facebook", "Twitter", "知人からの紹介", "Web検索", "WordBench.orgウェブサイト", "connpass", "WordPress管理画面お知らせ", "その他"],
+							datasets: [{
+								label: '票数',
+								data: [6, 0, 2, 0, 2, 0, 0, 2, 0],
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										userCallback: function(label, index, labels) {
+											if (Math.floor(label) === label) {
+												return label;
+											}
+										}
+									}
+								}]
+							}
+						}
+					});
+				
+				h2 Q5.今回の内容はわかりやすかったですか？
+				canvas#q5(width='400', height='200').chart-body
+				script.
+					var ctx = document.getElementById("q5").getContext('2d');
+					var q5 = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["わかりにくい 1", "2", "3", "4", "わかりやすい 5"],
+							datasets: [{
+								label: '票数',
+								data: [0, 0, 0, 3, 9],
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										userCallback: function(label, index, labels) {
+											if (Math.floor(label) === label) {
+												return label;
+											}
+										}
+									}
+								}]
+							}
+						}
+					});
+				
+				h2 Q6.今回の内容についての感想がご意見を自由にお聞かせください
+				ul
+					li XAMPPを使っていたことがあるが設定がめんどくさくて大変でした。もっと早くLocal by Flywhelを知りたかった…
+					li すごくわかりやすいスライドでした
+					li WordPress.orgとWordPress.comについて知ることができた
+					li わからない内容も多々あったのでもっと勉強していきたいです
+					li よくわかりました
+					li ローカル環境が問題なくいれれてよかったです
+					li 非常にわかりやすい説明で良かった
+					
+				h2 Q7.今後取り上げて欲しいトピックスやテーマがあれば教えてください
+				ul
+					li GitHub
+					li CSSやJavaScriptとかについても教えて欲しいです
+					li セキュリティ
+					li カート機能の追加方法
+					li HTML5とかもあると少し嬉しいです
+					li GitHubの使い方やそもそもの利点など。
+					li 特にCSS（WPに関係ない？）是非！
+					
+				h2 Q8.WordBench岐阜の運営に関するご指摘やアドバイスなどがあればお聞かせください
+				ul
+					li アドバイスできる立場にありませんがガンバッテ！
+					li 前回もそうでしたが、アンカンファレンスや放課後WB岐阜の時間がとても勉強になりました。ささいなことでも意見交換できると楽しいし勉強になります。
+					li 個人的には朝から開催だと道が空いていて通いやすいです
+					li いつもありがとうございます。講座大変喜んでいます。超初心者ですがよろしくお願いします。
+					li 回避は1,000円にしましょう！
+				
+				h2 Q9.今回、質問したくてもできなかったことがありますか？あればお書きください。（何らかの形でフィードバックします）
+				p 特に記述はありませんでした。
+						
+				h2 Q10.今後も予定が合えば参加したいと思いますか？
+				canvas#q10(width='400', height='200').chart-body
+				script.
+					var ctx = document.getElementById("q10").getContext('2d');
+					var q10 = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["参加しない 1", "2", "3", "4", "参加したい 5"],
+							datasets: [{
+								label: '票数',
+								data: [0, 0, 0, 0, 12],
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										userCallback: function(label, index, labels) {
+											if (Math.floor(label) === label) {
+												return label;
+											}
+										}
+									}
+								}]
+							}
+						}
+					});
+			include ../_include/_sidebar.pug
+
+	// end page content
+include ../_include/_footer.pug

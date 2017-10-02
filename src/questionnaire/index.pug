@@ -1,0 +1,17 @@
+include ../_include/_header.pug
+.page-content-wrap
+	// start page content
+	.jumbotron.jumbotron-fluid.page-header
+		.container
+			h1.display-4 アンケート結果一覧
+	// end page header
+	// start page content
+	.container.page-content
+		.row
+			.col-md-8
+				ul.list-group
+					li.list-group-item: a(href=path+'20171001.html') 第4回WordBench岐阜（2017/10/1開催）
+			include ../_include/_sidebar.pug
+
+	// end page content
+include ../_include/_footer.pug

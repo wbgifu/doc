@@ -1,0 +1,263 @@
+
+<!-- - var path = ''--><!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordBench岐阜</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet">
+    <link rel="stylesheet" href="/doc/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-wbgifu navbar-expand-md navbar-dark fixed-top bg-dark"><a class="navbar-brand" href="/doc/"><img class="navbar-logo" src="/doc/images/wapuu.png" width="30" height="30">WordBench岐阜</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/doc/about.html">WordBench岐阜とは</a></li>
+          <li class="nav-item dropdown"><a class="nav-link" href="/doc/index.html#schedule">過去と今後の開催情報</a></li>
+          <li class="nav-item dropdown"><a class="nav-link" href="/doc/questionnaire/index.html">アンケート結果一覧</a></li>
+        </ul>
+        <div class="dropdown show"><a class="btn btn-info dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">定例WordPress講座について</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="/doc/course/index.html">定例WordPress講座とは？</a><a class="dropdown-item" href="/doc/course/introduction.html">導入編</a><a class="dropdown-item" href="/doc/course/setting.html">設定編</a><a class="dropdown-item" href="/doc/course/content.html">コンテンツ制作編</a><a class="dropdown-item" href="/doc/course/html-css.html">HTML&CSS編</a><a class="dropdown-item" href="/doc/course/customize.html">カスタマイズ編</a><a class="dropdown-item" href="/doc/course/operation.html">運用編</a></div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<div class="page-content-wrap">
+  <!-- start page content-->
+  <div class="jumbotron jumbotron-fluid page-header">
+    <div class="container">
+      <h1 class="display-4">第4回WordBench岐阜 アンケート結果</h1>
+      <p class="lead">回答数12名</p>
+    </div>
+  </div>
+  <!-- end page header-->
+  <!-- start page content-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <div class="container page-content">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Q1.WordBench岐阜に参加するのは何回目ですか？</h2>
+        <canvas class="chart-body" id="q1" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById("q1").getContext('2d');
+          var q1 = new Chart(ctx, {
+          	type: 'bar',
+          	data: {
+          		labels: ["はじめて", "2回目", "3回目", "それ以上"],
+          		datasets: [{
+          			label: '票数',
+          			data: [2, 6, 4, 0],
+          		}]
+          	},
+          });
+          
+        </script>
+        <h2>Q2.あなたの職種は？</h2>
+        <canvas class="chart-body" id="q2" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById("q2").getContext('2d');
+          var q2 = new Chart(ctx, {
+          	type: 'bar',
+          	data: {
+          		labels: ["デザイナー", "フロントエンドエンジニア", "プログラマー", "ディレクター", "ブロガー", "学生", "勤務先Web担当者", "その他"],
+          		datasets: [{
+          			label: '票数',
+          			data: [4, 0, 1, 2, 0, 0, 3, 2],
+          		}]
+          	},
+          	options: {
+          		scales: {
+          			yAxes: [{
+          				ticks: {
+          					beginAtZero: true,
+          					userCallback: function(label, index, labels) {
+          						if (Math.floor(label) === label) {
+          							return label;
+          						}
+          					}
+          				}
+          			}]
+          		}
+          	}
+          });
+          
+        </script>
+        <h2>Q3.勤務形態は？</h2>
+        <canvas class="chart-body" id="q3" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById("q3").getContext('2d');
+          var q3 = new Chart(ctx, {
+          	type: 'bar',
+          	data: {
+          		labels: ["自営業・フリーランス", "会社勤め", "リモートワーク"],
+          		datasets: [{
+          			label: '票数',
+          			data: [4, 8, 0],
+          		}]
+          	},
+          	options: {
+          		scales: {
+          			yAxes: [{
+          				ticks: {
+          					beginAtZero: true,
+          					userCallback: function(label, index, labels) {
+          						if (Math.floor(label) === label) {
+          							return label;
+          						}
+          					}
+          				}
+          			}]
+          		}
+          	}
+          });
+          
+        </script>
+        <h2>Q4.今回のWordBench岐阜を何で知りましたか？一番影響力の強かったものを１つ選んでください。</h2>
+        <canvas class="chart-body" id="q4" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById("q4").getContext('2d');
+          var q4 = new Chart(ctx, {
+          	type: 'bar',
+          	data: {
+          		labels: ["前回のWordBench岐阜で知った", "Facebook", "Twitter", "知人からの紹介", "Web検索", "WordBench.orgウェブサイト", "connpass", "WordPress管理画面お知らせ", "その他"],
+          		datasets: [{
+          			label: '票数',
+          			data: [6, 0, 2, 0, 2, 0, 0, 2, 0],
+          		}]
+          	},
+          	options: {
+          		scales: {
+          			yAxes: [{
+          				ticks: {
+          					beginAtZero: true,
+          					userCallback: function(label, index, labels) {
+          						if (Math.floor(label) === label) {
+          							return label;
+          						}
+          					}
+          				}
+          			}]
+          		}
+          	}
+          });
+          
+        </script>
+        <h2>Q5.今回の内容はわかりやすかったですか？</h2>
+        <canvas class="chart-body" id="q5" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById("q5").getContext('2d');
+          var q5 = new Chart(ctx, {
+          	type: 'bar',
+          	data: {
+          		labels: ["わかりにくい 1", "2", "3", "4", "わかりやすい 5"],
+          		datasets: [{
+          			label: '票数',
+          			data: [0, 0, 0, 3, 9],
+          		}]
+          	},
+          	options: {
+          		scales: {
+          			yAxes: [{
+          				ticks: {
+          					beginAtZero: true,
+          					userCallback: function(label, index, labels) {
+          						if (Math.floor(label) === label) {
+          							return label;
+          						}
+          					}
+          				}
+          			}]
+          		}
+          	}
+          });
+          
+        </script>
+        <h2>Q6.今回の内容についての感想がご意見を自由にお聞かせください</h2>
+        <ul>
+          <li>XAMPPを使っていたことがあるが設定がめんどくさくて大変でした。もっと早くLocal by Flywhelを知りたかった…</li>
+          <li>すごくわかりやすいスライドでした</li>
+          <li>WordPress.orgとWordPress.comについて知ることができた</li>
+          <li>わからない内容も多々あったのでもっと勉強していきたいです</li>
+          <li>よくわかりました</li>
+          <li>ローカル環境が問題なくいれれてよかったです</li>
+          <li>非常にわかりやすい説明で良かった</li>
+        </ul>
+        <h2>Q7.今後取り上げて欲しいトピックスやテーマがあれば教えてください</h2>
+        <ul>
+          <li>GitHub</li>
+          <li>CSSやJavaScriptとかについても教えて欲しいです</li>
+          <li>セキュリティ</li>
+          <li>カート機能の追加方法</li>
+          <li>HTML5とかもあると少し嬉しいです</li>
+          <li>GitHubの使い方やそもそもの利点など。</li>
+          <li>特にCSS（WPに関係ない？）是非！</li>
+        </ul>
+        <h2>Q8.WordBench岐阜の運営に関するご指摘やアドバイスなどがあればお聞かせください</h2>
+        <ul>
+          <li>アドバイスできる立場にありませんがガンバッテ！</li>
+          <li>前回もそうでしたが、アンカンファレンスや放課後WB岐阜の時間がとても勉強になりました。ささいなことでも意見交換できると楽しいし勉強になります。</li>
+          <li>個人的には朝から開催だと道が空いていて通いやすいです</li>
+          <li>いつもありがとうございます。講座大変喜んでいます。超初心者ですがよろしくお願いします。</li>
+          <li>回避は1,000円にしましょう！</li>
+        </ul>
+        <h2>Q9.今回、質問したくてもできなかったことがありますか？あればお書きください。（何らかの形でフィードバックします）</h2>
+        <p>特に記述はありませんでした。</p>
+        <h2>Q10.今後も予定が合えば参加したいと思いますか？</h2>
+        <canvas class="chart-body" id="q10" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById("q10").getContext('2d');
+          var q10 = new Chart(ctx, {
+          	type: 'bar',
+          	data: {
+          		labels: ["参加しない 1", "2", "3", "4", "参加したい 5"],
+          		datasets: [{
+          			label: '票数',
+          			data: [0, 0, 0, 0, 12],
+          		}]
+          	},
+          	options: {
+          		scales: {
+          			yAxes: [{
+          				ticks: {
+          					beginAtZero: true,
+          					userCallback: function(label, index, labels) {
+          						if (Math.floor(label) === label) {
+          							return label;
+          						}
+          					}
+          				}
+          			}]
+          		}
+          	}
+          });
+        </script>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="/doc/course/index.html">定例WordPress講座とは？</a></li>
+          <li class="list-group-item"><a href="/doc/course/introduction.html">導入編</a></li>
+          <li class="list-group-item"><a href="/doc/course/setting.html">設定編</a></li>
+          <li class="list-group-item"><a href="/doc/course/content.html">コンテンツ制作編</a></li>
+          <li class="list-group-item"><a href="/doc/course/html-css.html">HTML&CSS編</a></li>
+          <li class="list-group-item"><a href="/doc/course/customize.html">カスタマイズ編</a></li>
+          <li class="list-group-item"><a href="/doc/course/operation.html">運用編</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end page content-->
+</div>
+<!-- footer-->
+<hr>
+<footer class="site-footer">
+  <div class="container">
+    <p class="text-center"><a href="http://wordbench.org/" target="_blank">WordBench.org</a>で日本各地のWordBench情報を得ることができます。</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
