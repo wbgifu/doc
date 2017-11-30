@@ -51,4 +51,30 @@ WordPress Foundationの役割について。「オープンソース、GPLソフ
 
 上のURLをクリックするとこのようなページが表示されます。
 
-![introduction-01.png](https://github.com/wbgifu/doc/course/introduction/images/introduction-01.png)
+![Local by Flywheel トップページ](https://github.com/wbgifu/doc/blob/master/course/introduction/images/introduction-01.png)
+
+右上部の白文字で[DOWNLOAD]というボタンを押します。
+
+![Local by Flywheel フォーム](https://github.com/wbgifu/doc/blob/master/course/introduction/images/introduction-02.png)
+
+[Mac]もしくは[Windows]を選択肢、その下の項目を入力します。入力が終わったら最下部の[GET IT NOW]ボタンをクリックします。
+
+![ダウンロード開始画面(https://github.com/wbgifu/doc/blob/master/course/introduction/images/introduction-03.png)
+
+ダウンロードが進行しているはずです。（下画像はMacのサンプル）
+
+![ダウンロードしたファイルを確認](https://github.com/wbgifu/doc/blob/master/course/introduction/images/introduction-04.png)
+
+ダウンロードが完了したら任意の場所にあるダウンロードしたZIPファイル（圧縮ファイル）を解凍します。Macの場合はファイルをクリックするだけで解凍が始まります。
+
+![ダウンロードしたファイルを解凍](https://github.com/wbgifu/doc/blob/master/course/introduction/images/introduction-05.png)
+
+解凍が完了するとアプリケーションアイコンを確認することができるはずです。Macの場合はこのアプリケーションアイコン（アプリケーション自体）を【アプリケーション】フォルダに移動させておくことをお勧めします。（任意）
+
+![Let's GO](https://github.com/wbgifu/doc/blob/master/course/introduction/images/introduction-06.png)
+
+アプリケーションを起動させます。初めて起動する際には上のような表示になります。[LET'S GO]を押して進みます。途中、管理者権限のパスワードを求められることがありますが、必要に応じて対応してください。
+
+以上で、ダウンロードからインストールまでが完了しました。
+
+>ここまで準備した上で講座を受けられることを強くお勧めします。インストール処理に時間がかかるため講座内ではインストール方法の説明のみになります。
