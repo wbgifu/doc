@@ -50,3 +50,5 @@ WordPress Foundationの役割について。「オープンソース、GPLソフ
 > [https://local.getflywheel.com/](https://local.getflywheel.com/)
 
 上のURLをクリックするとこのようなページが表示されます。
+
+![introduction-01.png](https://github.com/wbgifu/doc/course/introduction/images/introduction-01.png)
