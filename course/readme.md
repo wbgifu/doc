@@ -14,7 +14,7 @@ WordBench岐阜に参加してくださる参加者の方々の中には、超�
 |回|タイトル|内容|
 ----|----|----
 |第1回|導入編|[「WordPressとは」「ローカル開発環境を作ってWordPressを動かしてみる」](https://github.com/wbgifu/doc/tree/master/course/introduction)|
-|第2回|設定編|「一番最初の初期設定」「よく使われるプラグイン」|
+|第2回|設定編|[「一番最初の初期設定」「よく使われるプラグイン」](https://github.com/wbgifu/doc/tree/master/course/setting)|
 |第3回|コンテンツ制作編|「投稿と固定ページ」「カスタム投稿タイプ入門」「コンテンツ制作で意識するSEO対策」|
 |第4回|HTML&CSS編|「よく使うHTML&CSS」|
 |第5回|カスタマイズ編|「子テーマを使ったカスタマイズ」|
